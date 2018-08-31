@@ -1,0 +1,37 @@
+# create by xieqiang
+# a20 nvr update packet configure file
+
+updatepacket
+{
+packetType = "cmd";
+devindex = 2;
+size = -1;
+hardware = "0x01010101,0x02010101,0x02020101,0x02020501";
+cmd = match;
+}
+
+updatepacket
+{
+packetType = "filesys";
+devindex = 3;
+offset = 0;
+file = "./nvr_target.ramdisk";
+}
+
+updatepacket
+{
+packetType = "kernel";
+devindex = 2;
+offset = 0;
+file = "./uImage_nvr";
+}
+
+# updatepacket
+# {
+# packetType = "logo";
+# devindex = -1;
+# offset = 0;
+# file = "./linux.bmp";
+# }
+
+

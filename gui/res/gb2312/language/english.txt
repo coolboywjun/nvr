@@ -1,0 +1,454 @@
+[english]
+Hello
+Ok
+Cancel
+Main Menu
+Single Channel
+Four Channel
+Encode Param
+Image Param
+Replay
+Record Control
+Ptz Control
+Camera
+Setup Guide
+Lock Screen
+Transparent
+Formatting Hard Disk...
+Video Loss
+
+Main Menu
+Camera
+Record
+Replay
+Network
+Setting
+System
+Shutdown
+
+Advanced Options
+Time
+Exception
+Alarm
+Rec Control
+User
+Auto Maintenance
+Backup
+Log
+
+Show NVR Time
+Sync to NTP
+Server IP
+Port
+Time Zone
+Update Cycle
+Device Time
+Hour
+Ok
+
+Rec Control
+Record Mode
+Alltime Record
+Timer Record
+Invade Record
+Timer & Invade
+Close
+All
+
+User Account
+Add
+Delete
+Using
+Normal
+Does not support remove administrator user!
+Only the administrator user can modify other user information!
+Only administrator user can add a new user!
+More than systems support the number of users!
+Only the administrator user can delete users!
+NO.
+User Name
+Group
+Status
+Modify
+Exit
+
+User Name
+Old Password
+New Password
+Confirm Password
+Password change failed, check the input
+Existing in the system the user name, please change the user name!
+
+Automatic Maintenance
+Enable
+Everyday
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+At
+
+Log Message
+Type
+All
+System Operation
+Configure 
+Alarm Event 
+Record Operation
+User Manage
+Start Time
+End Time
+Query
+NO.
+Recording Duration
+Event
+Play
+User admin login
+User guest login
+User admin login out
+User guest login out
+Reboot
+Boot
+Shutdown
+Backup
+Clear
+
+Configure Backup 
+Export data
+Import data
+Reminder
+Import or export system configuration files that need to access USB devices, to support the operation of the corresponding!
+USB device in the system configuration files
+Export system data failed!
+Please confirm that has access to the USB device!
+Data has been imported, the system need to restart to work properly!
+Data import failed!
+Please confirm that has access to the USB device!
+Data has been derived£¡
+Mobile Monitor 
+
+Camera
+All
+NO.
+Device Name
+Port
+Protocal
+Search
+Add
+Filter
+All
+Selected Device
+Smart IP Control
+Smart Add
+Enable
+Channel
+IP Address
+Port
+Yes
+No
+Remove
+Manual Add
+Refresh
+
+IPNC Setting
+Device ID
+Enable DHCP
+Software Version
+Device IP
+Device Type
+Mask
+Device Port
+Gateway
+MAC Address
+Obtained DNS Automatically
+User Name
+Main DNS
+Password
+Sub DNS
+Save
+
+Channel Setting
+Channel Number
+Enable Connect
+Data Port
+RTSP Port
+Remote Channel
+HTTP Port
+Protocal
+
+Record Manage
+Pack No
+Total Size
+Available Size
+Backup Disk
+Status
+Disk Type
+File System
+Using
+Mounted
+Unformatted
+Formatting
+Format
+No hard drive
+Hard disk error
+Record Setting
+Channel
+Record Strategy
+Alarm Record
+Timer&Alarm
+Stream
+First Stream
+Second Stream
+Auto Cover
+Time Setting
+Copy
+Apply
+
+Section Setting
+Weekday
+Everyday
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Whole Day
+Section 1
+Section 2
+Section 3
+Section 4
+Copy to
+
+Channel 1
+Channel 2
+Channel 3
+Channel 4
+Backup
+Play
+Stop
+Stop
+Pause
+Pause
+Play
+Full screen
+Slow down
+Speed up
+Slow play 3
+Slow play 2
+Slow play 1
+Normal playback
+Fast play 1
+Fast play 2
+Fast play 3
+All the video
+Ordinary video
+Extern Alarms
+Dynamic monitoring
+
+Video Backup
+Channel Select
+Channel 1
+Channel 2
+Channel 3
+Channel 4
+Backup to
+Not found the usb storage devices
+File Size
+Backup Progress
+Stop
+
+Main DNS
+Subnet Mask
+Sub DNS
+Default Gateway
+Network Service Setting
+DDNS
+UPNP
+PPPOE
+Default
+
+Enable PPPOE
+Online Time
+In the Dial
+Dial-up Success
+Not Dial
+
+Enable DDNS
+Provider
+Domain
+Password
+Server Port
+Update Cycle
+
+Mapping IP
+Enable UPNP
+Web Port
+Command Port
+Talkback Port
+
+Video Output Channels
+Alarm Input Channels
+Alarm Output Channels
+Device ID
+Andriod Client
+Software Version
+GUI Version
+Release Date
+Serial Number
+System Upgrade
+If you now need to through the USB device to upgrade the machine, please insert the USB device, press "start" button to start the upgrade, please don't turn the power off in the process of upgrading.
+Upgrade File: 
+Don't find upgrade file
+Start
+Default
+
+Shutdown
+Reboot
+
+Encoding
+Channel
+Frame Rate
+I Frame Interval
+Bit Rate(Kbps)
+Bit Rate Type
+Variable Rate
+Constant Rate 
+
+Image
+Brightness
+Contrast
+Saturation
+Grayscale
+Sharpness
+Power Rate
+Scene
+Auto Mode
+Indoor
+Outdoor
+IR Mode
+Day Mode
+Night Mode
+Timing Mode
+Setting
+ 
+IR mode Time Setting
+Section 1
+Section 2
+Section 3
+Section 4
+
+Ptz Setting
+Ptz Speed
+Zoom Speed
+Fast
+Medium
+Slow
+Zoom
+Focus
+Iris
+Preset
+Set
+Call
+
+User
+Incorrect Password
+
+Boot Wizard
+Boot the wizard Settings: including basic Settings, network Settings, remote devices, video program.
+Next
+Last
+General Parameters
+System Time
+Select Language
+Simplified Chinese
+Finish
+
+OSD Param
+OSD Setting
+Display Time
+Time Color
+Display Stream Info
+Text Color
+Display Text
+Black
+White
+Blue
+Yellow
+
+Format complete!
+Message
+Temporarily does not support!
+Channel number exceeds limit!
+Currently only supports single channel fast forward!
+Not found the storage device!
+Set the period of no video data!
+Backup failure!
+Insufficient disk space!
+Upgrade file was not found!
+After restore factory Settings, the system will restart!
+Upgrade is complete, the system will restart!
+Are you sure format disk space!
+Are you sure clear the log information!
+¡¾English¡¿
+
+Sun
+Mon
+Tue
+Wed
+Thu
+Fri
+Sat
+
+Jan
+Feb
+Mar
+Apr
+May
+June
+July
+Aug
+Sep
+Oct
+Nov
+Dec
+
+Nvr Test
+Test Program
+Result
+USB Test
+Disk Test
+Audio Input Test
+Audio Output Test
+System Led Test
+Storage Led Test
+Fan Test
+VGA Test
+HDMI Test
+Reset Button Test
+Set The Test Flags
+Attention
+After the completion of NVR test system need to restart can normal use.
+Test Result
+Success
+Fail
+Without this test item!
+Please confirm whether there is audio input!
+Please confirm whether there is audio output!
+Please make sure the system LED is flashing!
+Please confirm whether storage LED flashing!
+Please make sure the fan is working!
+Please make sure the VGA output is normal!
+Please make sure the HDMI output is normal!
+Please confirm by pressing the reset button!
+Test the USB, two USB ports are need to insert the USB mouse; Test drive, need to access the hard disk.
+Test audio input, audio input interface to access pickup, such as a microphone, audio output interface to access the headset or audio equipment, etc. If you can hear the echo said tests pass, on the other hand said test failure.
+Test audio output, audio output interface to access the headset or audio equipment, etc. If you can hear the alarm said tests pass, on the other hand said test failure.
+Test the VGA output, VGA interface need to display.
+Test HDMI output, HDMI interface need to display.
+Test reset button, need to press the reset button, wait for after testing the let go.
+Please upgrade device

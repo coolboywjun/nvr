@@ -1,0 +1,62 @@
+串口通信,115200,8n1
+
+指令使用固定长度的数据包.
+
+指令格式:(每个数据包共有16 byte)
+  byte0  byte1 byte2   ...                 ...      byte14    byte15
+| 0xAA | 0x55 | cmd | data0 | data1 | data2 | ... | data11 | check sum |
+
+check sum = cmd + data0 + data1 + ... +data11
+data0 到 data11 ,不同的指令有不同的定义.
+
+
+cmd:
+-------------------------------------------
+1,连接,用于测试PC与设备是否可正常通信.
+cmd = 0x01
+data0 = 'c'
+data1 = 'o'
+data2 = 'n'
+data3 = 'n'
+data4 = 'e'
+data5 = 'c'
+data6 = 't'
+data7 -- data11 = 0x00
+check sum = 0x01 +'c'+'o'+'n'+'n'+'e'+'c'+'t'
+
+PC发送此指令到设备,设备收到后发送相同的指令到PC
+
+-------------------------------------------
+2,申请MAC地址.(此指令由PC发送)
+cmd = 0x02
+[data1,data0] = 申请的数目.16位,低字节在data0
+data2 -- data11 = 0x00
+check sum = 0x02 + [data1,data0]
+
+说明:设备收到此指令后,会返回指令0x03
+-------------------------------------------
+3,返回申请的MCA地址.(此指令由设备发送)
+cmd = 0x03
+[data1,data0] = MCA地址数目.16位,低字节在data0
+[data7,data2] = 开始的MAC地址. 第一字节在data2.
+data8 -- data11 = 0x00
+check sum = 0x03 + [data1,data0] + [data7,data2]
+
+
+说明:如果"MCA地址数目"为0,而"开始的MAC地址"不等于[0xff,0xff,0xff,0xff,0xff,0xff]
+则表示MAC地址已不足,或响应指令0x04时没有进行过MAC地址申请.
+如果"MCA地址数目"为0,"开始的MAC地址"等于[0xff,0xff,0xff,0xff,0xff,0xff]
+则表示MAC地址已用完.
+-------------------------------------------
+4,上次申请的MAC地址.(此指令由PC发送)
+cmd = 0x04
+data0 -- data11 = 0x00
+check sum = 0x04
+
+说明:设备收到此指令后,会返回指令0x03,内容为
+最后一次成功申请的MAC地址.
+-------------------------------------------
+
+
+
+

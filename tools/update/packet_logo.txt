@@ -1,0 +1,11 @@
+# create by xieqiang
+# a20 nvr update packet configure file
+
+updatepacket
+{
+packetType = "logo";
+devindex = -1;
+offset = 0;
+file = "./linux.bmp";
+}
+

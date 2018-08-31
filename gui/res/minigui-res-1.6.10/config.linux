@@ -1,0 +1,60 @@
+#----------------------------------------------------------------------
+# Configuration Section
+#----------------------------------------------------------------------
+CURDIR = $(shell pwd)
+ROOTDIR = ../../..
+CURWORKDIR = $(CURDIR)/$(ROOTDIR)
+include $(ROOTDIR)/Rules.make
+
+# Source directory.
+srcdir = $(shell sh -c pwd)
+
+# Common prefix for installation directories.
+# NOTE: This directory must exist when you start the install.
+# NOTE: Don't modify TOPDIR.
+#TOPDIR= /job/yy/nvr/trunk/nvr/a20_target
+TOPDIR = $(TARGET_DIR)
+prefix = $(TOPDIR)/usr/local
+exec_prefix = $(prefix)
+
+# Directory where the shared stubs and static library will be installed.
+libdir = $(prefix)/lib
+
+# Directory where the shared library will be installed.
+sharedlibdir = $(prefix)/lib
+
+# Directory where the resource files will be installed.
+resdir = $(prefix)/lib/minigui
+
+# Directory where the demos will be installed.
+bindir = $(exec_prefix)/bin/minigui
+
+# Directory where the run-time configuration files will be installed.
+cfgdir = $(TOPDIR)/etc
+
+# Directory where the header files will be installed.
+includedir = $(prefix)/include/minigui
+
+# Directory where the man files will be installed.
+mandir = $(prefix)/man
+
+#----------------------------------------------------------------------
+# Compiler Section -- don't edit following lines.
+#----------------------------------------------------------------------
+
+# Compiler used.
+CC       = gcc
+CFLAGS   = $(WARN) $(INCLUDES) $(OPTIMIZE) $(DEFINES)
+WARN     = -Wall
+OPTIMIZE = -fomit-frame-pointer -fno-strength-reduce -O2 -pipe -m486
+DEFINES  = -D_REENTRANT
+
+# Utilites used.
+AR    = ar
+INSTALL_DIR     = install -c -m 755 -d
+INSTALL_PROGRAM = install -c -s -m 4755
+INSTALL_SHLIB   = install -c -m 755
+INSTALL_LIB     = install -c -m 444
+INSTALL_DATA    = install -c -m 644
+MAKE = make 
+

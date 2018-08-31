@@ -1,0 +1,26 @@
+NAME
+====
+
+minigui-res version 1.6.10 for MiniGUI V1.6.10 GPL version.
+
+
+INSTALLATION
+===========
+
+Installation path by default:
+
+    /usr/local/lib/minigui/res
+
+Run
+
+    make install
+
+to install the resource files.
+
+Run
+
+    make uninstall
+
+to uninstall the resource files.
+
+
